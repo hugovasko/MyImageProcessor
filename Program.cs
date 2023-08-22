@@ -12,19 +12,30 @@ using System.Threading.Tasks;
 
 try
 {
-
     Console.Write("Enter the path to the photos directory: ");
     string imageDirectory = Console.ReadLine() ?? string.Empty;
+
+    if (!Directory.Exists(imageDirectory))
+    {
+        Console.WriteLine("The image directory does not exist. Please check and try again.");
+        return;
+    }
 
     Console.Write("Enter the path to the output directory: ");
     string outputDirectory = Console.ReadLine() ?? string.Empty;
 
+    if (!Directory.Exists(outputDirectory))
+    {
+        Console.WriteLine("The output directory does not exist. Please check and try again.");
+        return;
+    }
+
     Console.Write("Enter the path to the text dictionary file: ");
     string textFilePath = Console.ReadLine() ?? string.Empty;
 
-    if (!Directory.Exists(imageDirectory) || !Directory.Exists(outputDirectory) || !File.Exists(textFilePath))
+    if (!File.Exists(textFilePath))
     {
-        Console.WriteLine("One or more paths are incorrect. Please check and try again.");
+        Console.WriteLine("The text dictionary file does not exist. Please check and try again.");
         return;
     }
 

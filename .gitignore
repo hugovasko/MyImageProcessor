@@ -1,3 +1,5 @@
 # .NET Core Build Folders
 bin/
 obj/
+ubuntu_release.zip
+windows_release.zip

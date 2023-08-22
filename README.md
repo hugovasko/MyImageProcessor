@@ -24,11 +24,9 @@ Unzip the downloaded file and run the application.
 
 ## Usage
 
-1. Place your images in the `photos` directory.
-2. Create a text dictionary file in the `text` directory with the format: `image_filename: Text to overlay`.
-3. Run the application.
-4. Enter the paths for photos, output, and text dictionary when prompted.
-5. Processed images will be saved in the `output` directory.
+1. Run the application.
+2. Enter the paths for photos, output, and text dictionary when prompted.
+3. Processed images will be saved in the `output` directory.
 
 ## Contributing
 
